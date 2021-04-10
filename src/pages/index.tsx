@@ -4,7 +4,7 @@ import { Categories } from "@components/Categories";
 import { Header } from "@components/Header";
 import { Slider } from "@components/Slider";
 import { GetStaticProps } from "next";
-import React from "react";
+import Head from "next/head";
 
 interface HomeProps {
   continents: {
@@ -19,6 +19,10 @@ interface HomeProps {
 export default function Home({ continents }: HomeProps): JSX.Element {
   return (
     <Flex direction="column" h="full">
+      <Head>
+        <title>Home | worltrip</title>
+      </Head>
+
       <Header />
 
       <Banner />

@@ -1,5 +1,4 @@
 import { Flex, Heading, Icon, Text, Tooltip } from "@chakra-ui/react";
-import React from "react";
 import { RiInformationLine } from "react-icons/ri";
 
 interface ContinentInfoProps {

@@ -1,5 +1,4 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
-import React from "react";
 import ReactCountryFlag from "react-country-flag";
 
 interface CityProps {

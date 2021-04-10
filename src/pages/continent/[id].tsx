@@ -3,7 +3,7 @@ import { ContinentCities } from "@components/ContinentCities";
 import { ContinentInfo } from "@components/ContinentInfo";
 import { Header } from "@components/Header";
 import { GetStaticPaths, GetStaticProps } from "next";
-import React from "react";
+import Head from "next/head";
 
 interface ContinentProps {
   continent: {
@@ -25,6 +25,9 @@ interface ContinentProps {
 export default function Continent({ continent }: ContinentProps): JSX.Element {
   return (
     <Flex direction="column">
+      <Head>
+        <title>{continent.name} | worldtrip</title>
+      </Head>
       <Header />
 
       <Flex
